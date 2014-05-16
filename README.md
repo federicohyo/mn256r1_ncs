@@ -17,3 +17,9 @@ Compile C libraries for sending and receiving events via usb
 2) sh compile_lib.sh
 
 
+TEST YOUR SETUP
+===============
+
+You can now test your setup by using the [ testsetup/test_all.py ]
+It will run some routing test as 1) setting biases 2) sending and receiving spikes 3) programming synaptic matrixes.
+If the test end succesfully you can start using the mn256r1 without any worries.
