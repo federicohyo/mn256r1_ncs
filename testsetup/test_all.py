@@ -50,19 +50,19 @@ biasconf.set_all_biases(default_biases)
 import conf_mn256r1
 
 print "Program connections weights ..."
-AERmn256r1.load_weight_matrix_programmable(conf_mn256r1.matrix_programmable_w)
+AERmn256r1.set_weight_matrix_programmable(conf_mn256r1.matrix_programmable_w)
 time.sleep(1)
 print "Program connections exc/inh ..."
-AERmn256r1.load_matrix_exc_inh(conf_mn256r1.matrix_programmable_exc_inh)
+AERmn256r1.set_matrix_exc_inh(conf_mn256r1.matrix_programmable_exc_inh)
 time.sleep(1)
 print "Program recurrent plastic connections ..."
-AERmn256r1.load_connections_matrix_plastic(conf_mn256r1.matrix_learning_rec)
+AERmn256r1.set_connections_matrix_plastic(conf_mn256r1.matrix_learning_rec)
 time.sleep(1)
 print "Program connections ..."
-AERmn256r1.load_connections_matrix_programmable(conf_mn256r1.matrix_programmable_rec)
+AERmn256r1.set_connections_matrix_programmable(conf_mn256r1.matrix_programmable_rec)
 time.sleep(1)
 print "Program plastic weights ..."
-AERmn256r1.load_weight_matrix_plastic(conf_mn256r1.matrix_learning_pot)
+AERmn256r1.set_weight_matrix_plastic(conf_mn256r1.matrix_learning_pot)
 time.sleep(1)
 
 
@@ -213,7 +213,7 @@ index_z = matrix_set>=0.5
 matrix_set[index_o] = 0
 matrix_set[index_z] = 1
 
-AERmn256r1.load_weight_matrix_plastic(matrix_set)
+AERmn256r1.set_weight_matrix_plastic(matrix_set)
 
 #print 'set weight plastic synapses to be very high...'
 #orig_wplastic = biasconf.get_bias_value('PA_WHIDN_N', default_biases)
