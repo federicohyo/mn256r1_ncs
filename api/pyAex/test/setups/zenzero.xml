@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<setup version="0.1">
+	<chip chipfile="chipfiles/ifslwta.csv" id="ifslwta0">
+		<AMDA host="zenzero" id="209"/>
+        <slot id="0"/>
+	</chip>
+	<chip chipfile="chipfiles/if2dwta.csv" id="if2dwta0">
+		<AMDA host="zenzero" id="206"/>
+        <slot id="1"/>
+	</chip>
+	<chip chipfile="chipfiles/ifslwta.csv" id="ifslwta1" >
+		<AMDA host="zenzero" id="204"/>
+        <slot id="2"/>
+	</chip>
+	<chip chipfile="chipfiles/linear.csv" id="seq" >
+		<AMDA host="zenzero" id=""/>
+        <slot id="3"/>
+	</chip>
+    <AEX host="zenzero" />
+</setup>

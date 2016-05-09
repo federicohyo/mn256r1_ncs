@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<setup version="0.1">
+     <virtualchip chipfile="chipfiles/ifslwta.csv" id="ifslwta0"/>
+        <virtualchip chipfile="chipfiles/if2dwta.csv" id="if2dwta" />
+        <virtualchip chipfile="chipfiles/ifslwta.csv" id="ifslwta1" />
+</setup>
