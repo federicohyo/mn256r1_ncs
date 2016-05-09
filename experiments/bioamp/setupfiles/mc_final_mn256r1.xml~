@@ -1,0 +1,11 @@
+<setuptype version="0.1">
+	<!-- 9 -->
+	<channelAddressing bits="[22]" name="default" type="monitor"/>
+	<channelAddressing bits="[22]" name="default" type="sequencer"/>
+
+	<slot id="0">
+		<aerMon in="[0]" out="[1]"/>
+		<aerSeq in="[0]" out="[1]"/>
+	</slot>
+
+</setuptype>
