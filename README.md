@@ -23,3 +23,10 @@ TEST YOUR SETUP
 You can now test your setup by using the [ testsetup/test_all.py ]
 It will run some routing test as 1) setting biases 2) sending and receiving spikes 3) programming synaptic matrixes.
 If the test end succesfully you can start using the mn256r1 without any worries.
+
+
+REFERENCE
+==========
+
+http://journal.frontiersin.org/article/10.3389/fnins.2015.00141/full
+
