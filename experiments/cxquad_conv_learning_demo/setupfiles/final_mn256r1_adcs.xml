@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--!DOCTYPE document SYSTEM "setup.dtd"-->
+
+<setup version="1.0">
+
+
+	<chip chipfile="mn256r1_adcs.nhml" id="mn256r1" slot="0">      
+	 <configurator module='pyAMDA.api'>
+		        <parameter name = 'host'>localhost</parameter>
+		        <parameter name = 'board'></parameter>
+	  </configurator>  
+    	</chip>
+
+
+	<defaultchip chipfile="mn256r1_adcs.nhml" />
+
+    <communicator module='pyAex.api.com_aextcpclient'> 
+        <parameter name='host'>localhost</parameter>
+        <parameter name='fps'>25</parameter>
+    </communicator>
+
+</setup>
+
+
+
+
+
+
+
+	

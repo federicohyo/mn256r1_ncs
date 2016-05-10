@@ -1,0 +1,56 @@
+<chip chipclass="mn256r1">
+  <addressSpecification type="aerIn">
+    <dim id="neu" type="soma">
+      <range>range(256)</range>
+      <description/>
+      <decoder>X</decoder>
+    </dim>
+   <dim id="syntype" type="synapse">
+      <range>range(520)</range>
+      <description/>
+      <decoder>Z</decoder>
+   </dim>
+   <pin id="X">
+      <decoder>neu</decoder>
+    </pin>
+    <pin id="Z">
+      <decoder>syntype</decoder>
+    </pin>
+    <pinlayout>Z13 Z12 Z11 Z10 Z9 Z8 Z7 Z6 Z5 Z4 Z3 Z2 Z1 Z0 X7 X6 X5 X4 X3 X2 X1 X0</pinlayout> 
+  </addressSpecification>
+  <addressSpecification type="aerOut">
+    <dim id="neu" type="soma">
+      <range>range(2**16)</range>
+      <description/>
+      <decoder>Y</decoder>
+    </dim>
+    <pin id="Y">
+      <decoder>neu</decoder>
+    </pin>
+	<pinlayout>Y20 Y19 Y18 Y17 Y16 Y15 Y14 Y13 Y12 Y11 Y10 Y9 Y8 Y7 Y6 Y5 Y4 Y3 Y2 Y1 Y0</pinlayout>
+  </addressSpecification>
+  <parameters>
+  </parameters>
+  <neuron id="excitatory">
+    <soma type="SOMA" id="general">
+      <dim id="neu" range="range(256)"/>
+    </soma>
+    <synapse type="LEARNING SYNAPSE" id="learning">
+      <dim id="syntype" range="range(256)"/>
+    </synapse>
+    <synapse type="PROGRAMMABLE SYNAPSE" id="programmable">
+      <dim id="syntype" range="range(256,512)"/>
+    </synapse>
+    <synapse type="VIRTUAL SYNAPSE EXC" id="virtual_exc">
+      <dim id="syntype" range="range(512,516)"/>
+    </synapse>
+    <synapse type="VIRTUAL SYNAPSE INH" id="virtual_inh">
+      <dim id="syntype" range="range(516,520)"/>
+    </synapse>
+  </neuron>
+   <neuron id="adcs">
+    <soma type="SOMA" id="general">
+      <dim id="neu" range="range(256,2**16)"/>
+    </soma>
+   </neuron>
+</chip>
