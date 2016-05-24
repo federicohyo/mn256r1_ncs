@@ -16,6 +16,8 @@ Install aerfx2 driver for usb communication
 Compile C libraries for sending and receiving events via usb
 2) sh compile_lib.sh
 
+Make sure you use the version of pyNCS that is in this repository under the folder pyNCS/
+
 
 TEST YOUR SETUP
 ===============
