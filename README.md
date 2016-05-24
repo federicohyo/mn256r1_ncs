@@ -4,7 +4,7 @@ mn256r1_ncs
 Specific software libraries to control neuromorphic VLSI multi neuron chip developed at the Neuromorphic Cognitive System group, UZH ETHZ Zurich.
 
 
-1) This software meant to be used with the latest MN256R1 VLSI multi-neuron chip and it requires pyNCS software package. pyNCS is available at [ https://github.com/inincs/pyNCS ] and documented here [ https://github.com/inincs/pyNCS/wiki ] However, a copy of it can be found in this repo under pyNCS folder, install this versio if you have problems with the one in github.
+1) This software meant to be used with the latest MN256R1 VLSI multi-neuron chip and it requires pyNCS software package. pyNCS is available at [ https://github.com/inincs/pyNCS ] and documented here [ https://github.com/inincs/pyNCS/wiki ] However, a copy of it can be found in this repo under pyNCS folder, install this version if you have problems with the one in github.
 
 INSTALLATION
 ============
