@@ -1,0 +1,15 @@
+SPECIAL
+
+BUFFER_BIASES, IBIT[15]=1 -- not connected
+                           IBIT[14:12] -- coarse current  default 3.2u
+                           IBIT[11:4]  -- fine current (0-255) default 80
+                           IBIT[3:0]=1111  -- not connected
+3.2u,80,0,0,0,0,
+
+SSP,IBIT[15:10]=111111   -- default all 1 to get largest tail current for SSN buffer
+       IBIT[9:4]=000111    -- 6 bits to tune value of SSP   (0-63), default 7
+       IBIT[3:0]=0000        --  voltage shift options (not useful for us)
+
+SSN,IBIT[15:10]=111111   -- default all 1 to get largest tail current for SSN buffer
+       IBIT[9:4]=001111    -- 6 bits to tune value of SSN  (0-63)   default 15
+       IBIT[3:0]=0000        --  voltage shift options (not useful for us)
